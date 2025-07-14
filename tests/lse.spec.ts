@@ -78,7 +78,7 @@ test.describe('FTSE 100 UI Tests', () => {
             console.log(`${item.rank}. ${item.name}`);
         });
     });
-
+    // This will basically get every single instrument in FTSE100, every single instrument has a market cap exceeding 7 million
     test('extracts and displays all FTSE 100 constituents with Market Cap exceeding 7 million', async ({ ftse100Page }) => {
         await ftse100Page.sortByMarketCapHighestToLowest();
 
